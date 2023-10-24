@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Reminder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Birthday Reminder</h1>
+    </header>
+    <section id="add-birthday" class="card">
+      <h2>Add Birthday</h2>
+      <div class="form">
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="date" id="birthdayInput" placeholder="Birthday">
+        <label for="notification">Allow notification</label>
+        <input type="checkbox" id="notification">
+        <button id="addButton">Add</button>
+      </div>
+    </section>
+    <section id="saved-birthdays" class="card">
+      <h2>Saved Birthdays</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Remaining Days</th>
+            <th>Notification</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="birthdayTableBody">
+          <!-- Dynamic content will be inserted here -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script src="script.js"></script>
+  <script src="notification.js"></script>
+</body>
+</html>
